@@ -26,12 +26,12 @@ jobs:
         dsn: ${{secrets.SCOPE_DSN}}
         race-detector: false
         no-parallel: true
-        version: master
+        version: deps-fix
       env:
         SCOPE_TESTING_FAIL_RETRIES: 3
         SCOPE_DEBUG: true
         SCOPE_RUNNER_ENABLED: true
-        SCOPE_RUNNER_EXCLUDE_BRANCHES: deps-fix
+        SCOPE_RUNNER_EXCLUDE_BRANCHES: master
 
     - name: Upload Scope logs
       if: always()
