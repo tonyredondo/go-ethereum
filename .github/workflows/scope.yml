@@ -25,12 +25,12 @@ jobs:
         dsn: ${{secrets.SCOPE_DSN}}
         race-detector: false
         no-parallel: true
-        version: c01cd52458b42947827048e01b7bc004e6ef272c
+        version: 7491d760e768a3115541eee7928b7d7d18b43212
       env:
         SCOPE_TESTING_FAIL_RETRIES: 3
         SCOPE_DEBUG: true
         SCOPE_RUNNER_ENABLED: true
-        SCOPE_RUNNER_EXCLUDE_BRANCHES: master
+        SCOPE_RUNNER_EXCLUDE_BRANCHES: master, ITR
 
     - name: Upload Scope logs
       if: always()
