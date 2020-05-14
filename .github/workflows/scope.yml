@@ -31,7 +31,6 @@ jobs:
         SCOPE_DEBUG: true
         SCOPE_RUNNER_ENABLED: true
         SCOPE_RUNNER_EXCLUDE_BRANCHES: master
-        SCOPE_USE_JSON: true
 
     - name: Upload Scope logs
       if: always()
