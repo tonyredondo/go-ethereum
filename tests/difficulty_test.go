@@ -41,6 +41,7 @@ var (
 func TestDifficulty(t *testing.T) {
 	t.Parallel()
 
+	
 	dt := new(testMatcher)
 	// Not difficulty-tests
 	dt.skipLoad("hexencodetest.*")
